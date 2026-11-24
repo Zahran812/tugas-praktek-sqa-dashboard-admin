@@ -1,0 +1,5 @@
+com\hadir\config\ConfigurationManager.class
+com\hadir\utils\WaitUtils.class
+com\hadir\pages\LoginPage.class
+com\hadir\drivers\DriverFactory.class
+com\hadir\pages\BasePage.class

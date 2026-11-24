@@ -1,0 +1,87 @@
+
+# ==========================================
+# UiPath Studio - Generated / Cache Files
+# ==========================================
+
+.local/
+.objects/
+.settings/
+.tmh/
+.entities/
+.templates/
+.screenshots/
+
+# Build artifacts
+bin/
+obj/
+[Bb]uild/
+*.nupkg
+
+# UiPath temporary files
+*.tmp
+*.bak
+*.user
+*.suo
+*.log
+
+# ==========================================
+# IDE / Editor
+# ==========================================
+
+.vscode/
+.idea/
+*.code-workspace
+
+# Antigravity / AI Agent local files
+.claude/
+.agent/
+.agent-cache/
+
+# ==========================================
+# Operating System
+# ==========================================
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+# ==========================================
+# Generated Output
+# ==========================================
+
+# Ignore generated audit reports
+Data/Output/*
+
+# Keep output directory in Git
+!Data/Output/.gitkeep
+
+# ==========================================
+# Secrets / Credentials
+# ==========================================
+
+.env
+.env.*
+!.env.example
+
+secrets.json
+credentials.json
+*.pfx
+*.p12
+*.key
+
+# ==========================================
+# Test Artifacts
+# ==========================================
+
+TestResults/
+TestOutput/
+coverage/
