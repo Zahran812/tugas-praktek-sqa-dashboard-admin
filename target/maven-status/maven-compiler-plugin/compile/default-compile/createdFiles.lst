@@ -1,5 +1,13 @@
+com\hadir\pages\DownloadAbsenPage.class
+com\hadir\pages\LaporanLemburPage.class
+com\hadir\pages\LoginPage.class
+com\hadir\pages\BasePage.class
+com\hadir\pages\LaporanIzinPage.class
+com\hadir\drivers\DriverFactory.class
 com\hadir\config\ConfigurationManager.class
 com\hadir\utils\WaitUtils.class
-com\hadir\pages\LoginPage.class
-com\hadir\drivers\DriverFactory.class
-com\hadir\pages\BasePage.class
+com\hadir\pages\LaporanSakitPage.class
+com\hadir\pages\DashboardPage.class
+com\hadir\pages\BaseReportPage.class
+com\hadir\pages\GenericReportPage.class
+com\hadir\pages\LaporanKehadiranPage.class

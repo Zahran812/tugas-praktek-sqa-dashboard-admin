@@ -1,2 +1,6 @@
-com\hadir\tests\LoginTest.class
 com\hadir\base\BaseTest.class
+com\hadir\tests\LaporanTest.class
+com\hadir\base\BaseAuthenticatedTest.class
+com\hadir\tests\DashboardTest.class
+com\hadir\tests\LoginTest.class
+com\hadir\tests\LaporanSubmenusTest.class

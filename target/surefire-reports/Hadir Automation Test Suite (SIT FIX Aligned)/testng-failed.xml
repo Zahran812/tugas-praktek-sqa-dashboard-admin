@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Hadir Automation Test Suite (SIT FIX Aligned)]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Laporan Core &amp; Specialized Tests(failed)" verbose="0">
+    <classes>
+      <class name="com.hadir.tests.LaporanTest">
+        <methods>
+          <include name="setUpAuthenticatedSession"/>
+          <include name="testTC_ADM_REP_DWN_003_DownloadAbsenReversedDateNegative"/>
+          <include name="ensureSessionActive"/>
+          <include name="testTC_ADM_REP_DWN_001_002_DownloadAbsenAndEmptyDateNegative"/>
+          <include name="tearDownAuthenticatedSession"/>
+        </methods>
+      </class> <!-- com.hadir.tests.LaporanTest -->
+    </classes>
+  </test> <!-- Laporan Core & Specialized Tests(failed) -->
+  <test thread-count="5" name="Laporan Standard Sub-Menus Tests(failed)" verbose="0">
+    <classes>
+      <class name="com.hadir.tests.LaporanSubmenusTest">
+        <methods>
+          <include name="setUpAuthenticatedSession"/>
+          <include name="ensureSessionActive"/>
+          <include name="testTC_ADM_REP_CUT_003_CutiNotFoundNegative"/>
+          <include name="tearDownAuthenticatedSession"/>
+        </methods>
+      </class> <!-- com.hadir.tests.LaporanSubmenusTest -->
+    </classes>
+  </test> <!-- Laporan Standard Sub-Menus Tests(failed) -->
+</suite> <!-- Failed suite [Hadir Automation Test Suite (SIT FIX Aligned)] -->

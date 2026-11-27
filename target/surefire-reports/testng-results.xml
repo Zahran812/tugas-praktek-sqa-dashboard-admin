@@ -1,49 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-11-24T20:01:00 WIB" name="Hadir Web Automation Test Suite" finished-at="2026-11-24T20:01:17 WIB" duration-ms="16706">
+  <suite started-at="2026-11-26T14:19:25 WIB" name="Surefire suite" finished-at="2026-11-26T14:20:58 WIB" duration-ms="92369">
     <groups>
     </groups>
-    <test started-at="2026-11-24T20:01:00 WIB" name="Authentication Tests" finished-at="2026-11-24T20:01:17 WIB" duration-ms="16706">
-      <class name="com.hadir.tests.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hadir.tests.LoginTest@20ce78ec]" started-at="2026-11-24T20:01:00 WIB" name="setUp" finished-at="2026-11-24T20:01:05 WIB" duration-ms="4932" status="PASS">
+    <test started-at="2026-11-26T14:19:25 WIB" name="Surefire test" finished-at="2026-11-26T14:20:58 WIB" duration-ms="92369">
+      <class name="com.hadir.tests.LaporanTest">
+        <test-method is-config="true" signature="setUpAuthenticatedSession()[pri:0, instance:com.hadir.tests.LaporanTest@2f7c2f4f]" started-at="2026-11-26T14:19:25 WIB" name="setUpAuthenticatedSession" finished-at="2026-11-26T14:20:08 WIB" duration-ms="42552" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testLoginSuccessWithValidCredentials()[pri:1, instance:com.hadir.tests.LoginTest@20ce78ec]" started-at="2026-11-24T20:01:05 WIB" name="testLoginSuccessWithValidCredentials" description="Verify successful admin login with valid email and password" finished-at="2026-11-24T20:01:06 WIB" duration-ms="1530" status="PASS">
+        </test-method> <!-- setUpAuthenticatedSession -->
+        <test-method is-config="true" signature="ensureSessionActive()[pri:0, instance:com.hadir.tests.LaporanTest@2f7c2f4f]" started-at="2026-11-26T14:20:08 WIB" name="ensureSessionActive" finished-at="2026-11-26T14:20:08 WIB" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLoginSuccessWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hadir.tests.LoginTest@20ce78ec]" started-at="2026-11-24T20:01:06 WIB" name="tearDown" finished-at="2026-11-24T20:01:07 WIB" duration-ms="596" status="PASS">
+        </test-method> <!-- ensureSessionActive -->
+        <test-method signature="testTC_ADM_REP_SKT_001_to_003_SakitSkdAndDateFilter()[pri:0, instance:com.hadir.tests.LaporanTest@2f7c2f4f]" started-at="2026-11-26T14:20:08 WIB" name="testTC_ADM_REP_SKT_001_to_003_SakitSkdAndDateFilter" description="TC-ADM-REP-SKT-001..003: Verify Laporan Sakit table, SKD link preview, and date filter" finished-at="2026-11-26T14:20:57 WIB" duration-ms="49374" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hadir.tests.LoginTest@20ce78ec]" started-at="2026-11-24T20:01:07 WIB" name="setUp" finished-at="2026-11-24T20:01:10 WIB" duration-ms="2849" status="PASS">
+        </test-method> <!-- testTC_ADM_REP_SKT_001_to_003_SakitSkdAndDateFilter -->
+        <test-method is-config="true" signature="tearDownAuthenticatedSession()[pri:0, instance:com.hadir.tests.LaporanTest@2f7c2f4f]" started-at="2026-11-26T14:20:57 WIB" name="tearDownAuthenticatedSession" finished-at="2026-11-26T14:20:58 WIB" duration-ms="328" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testLoginFailedWithInvalidPassword()[pri:2, instance:com.hadir.tests.LoginTest@20ce78ec]" started-at="2026-11-24T20:01:10 WIB" name="testLoginFailedWithInvalidPassword" description="Verify login failure when entering incorrect password" finished-at="2026-11-24T20:01:12 WIB" duration-ms="1636" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLoginFailedWithInvalidPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hadir.tests.LoginTest@20ce78ec]" started-at="2026-11-24T20:01:12 WIB" name="tearDown" finished-at="2026-11-24T20:01:12 WIB" duration-ms="479" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.hadir.tests.LoginTest@20ce78ec]" started-at="2026-11-24T20:01:12 WIB" name="setUp" finished-at="2026-11-24T20:01:15 WIB" duration-ms="3213" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testLoginValidationEmptyFields()[pri:3, instance:com.hadir.tests.LoginTest@20ce78ec]" started-at="2026-11-24T20:01:15 WIB" name="testLoginValidationEmptyFields" description="Verify login validation when fields are submitted empty" finished-at="2026-11-24T20:01:16 WIB" duration-ms="735" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLoginValidationEmptyFields -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hadir.tests.LoginTest@20ce78ec]" started-at="2026-11-24T20:01:16 WIB" name="tearDown" finished-at="2026-11-24T20:01:17 WIB" duration-ms="653" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.hadir.tests.LoginTest -->
-    </test> <!-- Authentication Tests -->
-  </suite> <!-- Hadir Web Automation Test Suite -->
+        </test-method> <!-- tearDownAuthenticatedSession -->
+      </class> <!-- com.hadir.tests.LaporanTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
 </testng-results>

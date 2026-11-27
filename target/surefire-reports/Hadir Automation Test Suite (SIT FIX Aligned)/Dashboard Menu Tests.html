@@ -1,0 +1,130 @@
+<html>
+<head>
+<title>TestNG:  Dashboard Menu Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Dashboard Menu Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>10/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Nov 25 17:56:37 WIB 2026</td>
+</tr>
+<tr><td>Total time:</td><td>257 seconds (257741 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.hadir.tests.DashboardTest.testTC_ADM_DSH_PND_006_PendingCutiDetailNavigation()'><b>testTC_ADM_DSH_PND_006_PendingCutiDetailNavigation</b><br>Test class: com.hadir.tests.DashboardTest<br>Test method: TC-ADM-DSH-PND-006: Verify clicking employee in Pending Cuti navigates to v1 cuti detail</td>
+<td></td>
+<td>21</td>
+<td>com.hadir.tests.DashboardTest@409bf450</td></tr>
+<tr>
+<td title='com.hadir.tests.DashboardTest.testTC_ADM_DSH_PND_008_PendingReversedDateRangeNegative()'><b>testTC_ADM_DSH_PND_008_PendingReversedDateRangeNegative</b><br>Test class: com.hadir.tests.DashboardTest<br>Test method: TC-ADM-DSH-PND-008: Negative test - Pending reversed date range (End Date earlier than Start Date) handles gracefully</td>
+<td></td>
+<td>19</td>
+<td>com.hadir.tests.DashboardTest@409bf450</td></tr>
+<tr>
+<td title='com.hadir.tests.DashboardTest.testTC_ADM_DSH_PND_003_PendingResetFilter()'><b>testTC_ADM_DSH_PND_003_PendingResetFilter</b><br>Test class: com.hadir.tests.DashboardTest<br>Test method: TC-ADM-DSH-PND-003: Verify Reset button on Pending page restores default state</td>
+<td></td>
+<td>18</td>
+<td>com.hadir.tests.DashboardTest@409bf450</td></tr>
+<tr>
+<td title='com.hadir.tests.DashboardTest.testTC_ADM_DSH_PND_002_PendingFilterByValidDateRange()'><b>testTC_ADM_DSH_PND_002_PendingFilterByValidDateRange</b><br>Test class: com.hadir.tests.DashboardTest<br>Test method: TC-ADM-DSH-PND-002: Verify Pending date range filter with valid Start Date and End Date</td>
+<td></td>
+<td>17</td>
+<td>com.hadir.tests.DashboardTest@409bf450</td></tr>
+<tr>
+<td title='com.hadir.tests.DashboardTest.testTC_ADM_DSH_002_DashboardMetricsSyncOnRefresh()'><b>testTC_ADM_DSH_002_DashboardMetricsSyncOnRefresh</b><br>Test class: com.hadir.tests.DashboardTest<br>Test method: TC-ADM-DSH-002: Verify Dashboard metric cards remain consistent after page refresh</td>
+<td></td>
+<td>43</td>
+<td>com.hadir.tests.DashboardTest@409bf450</td></tr>
+<tr>
+<td title='com.hadir.tests.DashboardTest.testTC_ADM_DSH_003_DashboardResponsiveViewport()'><b>testTC_ADM_DSH_003_DashboardResponsiveViewport</b><br>Test class: com.hadir.tests.DashboardTest<br>Test method: TC-ADM-DSH-003: Verify Dashboard layout responsiveness across desktop (1920x1080) and tablet (768x1024)</td>
+<td></td>
+<td>23</td>
+<td>com.hadir.tests.DashboardTest@409bf450</td></tr>
+<tr>
+<td title='com.hadir.tests.DashboardTest.testTC_ADM_DSH_PND_001_PendingValidatorsAndSubtables()'><b>testTC_ADM_DSH_PND_001_PendingValidatorsAndSubtables</b><br>Test class: com.hadir.tests.DashboardTest<br>Test method: TC-ADM-DSH-PND-001: Verify Pending page displays 3 Validators and Lembur, Cuti, Koreksi subtables</td>
+<td></td>
+<td>15</td>
+<td>com.hadir.tests.DashboardTest@409bf450</td></tr>
+<tr>
+<td title='com.hadir.tests.DashboardTest.testTC_ADM_DSH_001_DashboardMetricsAndNoFilter()'><b>testTC_ADM_DSH_001_DashboardMetricsAndNoFilter</b><br>Test class: com.hadir.tests.DashboardTest<br>Test method: TC-ADM-DSH-001: Verify Dashboard displays metric cards and confirms no search/date filter inputs exist</td>
+<td></td>
+<td>32</td>
+<td>com.hadir.tests.DashboardTest@409bf450</td></tr>
+<tr>
+<td title='com.hadir.tests.DashboardTest.testTC_ADM_DSH_PND_007_PendingKoreksiDetailNavigation()'><b>testTC_ADM_DSH_PND_007_PendingKoreksiDetailNavigation</b><br>Test class: com.hadir.tests.DashboardTest<br>Test method: TC-ADM-DSH-PND-007: Verify clicking employee in Pending Koreksi navigates to koreksi detail</td>
+<td></td>
+<td>16</td>
+<td>com.hadir.tests.DashboardTest@409bf450</td></tr>
+<tr>
+<td title='com.hadir.tests.DashboardTest.testTC_ADM_DSH_PND_004_005_PendingLemburDetailAndNoApproveReject()'><b>testTC_ADM_DSH_PND_004_005_PendingLemburDetailAndNoApproveReject</b><br>Test class: com.hadir.tests.DashboardTest<br>Test method: TC-ADM-DSH-PND-004 & 005: Verify clicking employee in Pending Lembur navigates to v1 detail without Approve/Reject buttons</td>
+<td></td>
+<td>30</td>
+<td>com.hadir.tests.DashboardTest@409bf450</td></tr>
+</table><p>
+</body>
+</html>

@@ -4,6 +4,9 @@ import com.hadir.utils.WaitUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 
+import java.util.Collections;
+import java.util.List;
+
 /**
  * BasePage encapsulates common WebDriver interactions across all page objects.
  */
@@ -15,8 +18,20 @@ public abstract class BasePage {
         this.driver = driver;
     }
 
+    public void navigateTo(String url) {
+        driver.get(url);
+    }
+
     protected WebElement find(By locator) {
         return WaitUtils.waitUntilVisible(driver, locator);
+    }
+
+    protected List<WebElement> findElements(By locator) {
+        try {
+            return driver.findElements(locator);
+        } catch (Exception e) {
+            return Collections.emptyList();
+        }
     }
 
     protected void click(By locator) {
@@ -48,8 +63,16 @@ public abstract class BasePage {
         }
     }
 
+    protected boolean isElementPresent(By locator) {
+        return !driver.findElements(locator).isEmpty();
+    }
+
     protected void jsClick(By locator) {
         WebElement element = driver.findElement(locator);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
+    }
+
+    protected void jsClick(WebElement element) {
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
     }
 

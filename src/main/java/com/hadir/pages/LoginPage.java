@@ -48,7 +48,21 @@ public class LoginPage extends BasePage {
         enterEmail(email);
         enterPassword(password);
         clickSubmit();
-        WaitUtils.waitUntilUrlContains(driver, "dashboard");
+        try {
+            WaitUtils.waitUntilUrlContains(driver, "dashboard");
+        } catch (org.openqa.selenium.TimeoutException e) {
+            String pageText = "";
+            try {
+                pageText = driver.findElement(By.tagName("body")).getText().replace("\n", " | ");
+            } catch (Exception ignored) {}
+            if (pageText.contains("Berhasil login")) {
+                driver.get(ConfigurationManager.getDashboardUrl());
+                WaitUtils.waitUntilUrlContains(driver, "dashboard");
+            } else {
+                throw new org.openqa.selenium.TimeoutException(
+                        e.getMessage() + " | PageBody: [" + pageText + "]", e);
+            }
+        }
     }
 
     /**

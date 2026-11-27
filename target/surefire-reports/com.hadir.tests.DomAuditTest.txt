@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.hadir.tests.DomAuditTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 174.7 s -- in com.hadir.tests.DomAuditTest

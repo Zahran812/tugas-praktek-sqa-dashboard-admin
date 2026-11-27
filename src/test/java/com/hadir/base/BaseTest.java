@@ -17,7 +17,6 @@ public abstract class BaseTest {
     public void setUp() {
         DriverFactory.initDriver();
         driver = DriverFactory.getDriver();
-        driver.get(ConfigurationManager.getBaseUrl());
     }
 
     @AfterMethod(alwaysRun = true)
