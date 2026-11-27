@@ -38,7 +38,7 @@ praktek-sqa/
 │   │   └── utils/
 │   │       └── WaitUtils.java                  # Explicit wait utilities (anti-flaky test)
 │   └── resources/
-│       └── config.properties                   # URL target, kredensial admin, timeout, browser
+│       └── config.properties                   # URL target, timeout, browser (kredensial ada di .env)
 │
 └── src/test/
     ├── java/com/hadir/
@@ -79,12 +79,17 @@ mvn test
 mvn test -Dtest=LoginTest
 ```
 
-### Konfigurasi Kredensial & Headless (`src/main/resources/config.properties`):
+### Konfigurasi Kredensial (.env) & Headless (`src/main/resources/config.properties`):
+Kredensial login disimpan terpisah di file `.env` pada root project (tidak di-commit ke Git):
+```dotenv
+ADMIN_EMAIL=email.anda@example.com
+ADMIN_PASSWORD=password.anda
+```
+
+Konfigurasi non-sensitif tetap berada di `config.properties`:
 ```properties
 base.url=https://magang.dikahadir.com/
 login.url=https://magang.dikahadir.com/authentication/login
-admin.email=admin@hadir.com
-admin.password=MagangSQA_JC@123
 
 # Ubah headless=false jika ingin melihat jendela browser Chrome terbuka
 browser=chrome

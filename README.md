@@ -7,7 +7,7 @@ Projek automation testing berbasis **Java 21**, **Selenium WebDriver 4**, dan **
 ## 1. Lingkup Pengujian (Scope)
 Sesuai kebutuhan, proyek ini mencakup skenario pengujian utama:
 1. **Skenario Login (`LoginTest.java`)**:
-   - `testLoginSuccessWithValidCredentials`: Verifikasi login admin berhasil dengan email (`admin@hadir.com`) dan password valid (`MagangSQA_JC@123`), diarahkan ke dashboard.
+   - `testLoginSuccessWithValidCredentials`: Verifikasi login admin berhasil menggunakan kredensial dari file `.env` (`ADMIN_EMAIL` dan `ADMIN_PASSWORD`), diarahkan ke dashboard.
    - `testLoginFailedWithInvalidPassword`: Verifikasi penolakan login saat password salah.
    - `testLoginValidationEmptyFields`: Verifikasi validasi input saat field disubmit kosong.
 2. **Skenario Menu Download Absen (`DownloadAbsenTest.java`)**:
@@ -39,7 +39,7 @@ praktek-sqa/
 │   │   │   └── utils/
 │   │   │       └── WaitUtils.java            # Helper Explicit & Fluent Wait
 │   │   └── resources/
-│   │       └── config.properties             # URL target, kredensial, timeout, headless mode
+│   │       └── config.properties             # URL target, timeout, headless mode (tanpa kredensial)
 │   └── test/
 │       ├── java/com/hadir/
 │       │   ├── base/
@@ -60,7 +60,29 @@ praktek-sqa/
 
 ---
 
-## 4. Cara Menjalankan Pengujian (Execution)
+## 4. Konfigurasi Kredensial (.env)
+
+Kredensial login **tidak disimpan di source code maupun `config.properties`**. Nilai email dan password dibaca dari file `.env` di root project:
+
+```bash
+# Salin template, lalu isi dengan kredensial yang valid
+cp .env.example .env
+```
+
+Isi `.env`:
+```dotenv
+ADMIN_EMAIL=email.anda@example.com
+ADMIN_PASSWORD=password.anda
+```
+
+Catatan:
+- File `.env` sudah masuk `.gitignore`, jadi tidak akan ter-commit.
+- Alternatif tanpa file `.env`: set environment variable `ADMIN_EMAIL` dan `ADMIN_PASSWORD`.
+- Urutan prioritas konfigurasi: system property (`-D`) → environment variable → `.env` → `config.properties`.
+
+---
+
+## 5. Cara Menjalankan Pengujian (Execution)
 
 ### A. Menjalankan Seluruh Test Suite
 Jalankan perintah berikut di root folder project:
@@ -86,7 +108,7 @@ mvn test -Dheadless=false
 
 ---
 
-## 5. Laporan Hasil Pengujian (Test Reports)
+## 6. Laporan Hasil Pengujian (Test Reports)
 Setelah eksekusi selesai, laporan TestNG otomatis tersedia di:
 - `target/surefire-reports/index.html` (Laporan interaktif HTML TestNG)
 - `target/surefire-reports/emailable-report.html` (Ringkasan laporan ringkas)
